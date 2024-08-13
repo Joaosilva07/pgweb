@@ -40,6 +40,9 @@ function validarCpf(){
     }
 
     // TO DO:  More validations
+    // VALID CPF FORMATS:
+    // 000.000.000-00
+    // 00000000000
     
     return true;
 }
