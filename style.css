@@ -5,13 +5,15 @@
 
 .rodape{
     text-align: center;
+    position: fixed;
+    bottom: 0;
 }
 
 .user-input{
     text-align: center;
 }
 
-/* TODO: CENTRALIZAR BOTÃO
+
 #Ok-button {
     align-items: center;
     
