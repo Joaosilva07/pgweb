@@ -7,19 +7,34 @@
     text-align: center;
     position: fixed;
     bottom: 0;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
     
 }
 
 .user-input{
     text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+    
+    
+
 }
 
 
 #Ok-button {
     align-items: center;
     
+    
+    
 }
 
-*{
-    margin: 0%;
+*{                            /* O asteristico serve para aplicar a todos os elementos da página */  
+    margin: 0%; 
 }
