@@ -13,14 +13,21 @@
     
 }
 
+input{
+    display: block;
+    margin: 1px;
+}
+
 .user-input{
     text-align: center;
     width: 50%;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    padding: 5px;
     
     
     
