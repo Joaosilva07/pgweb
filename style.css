@@ -1,47 +1,42 @@
-
-#title {
-    text-align: center;
+* {
+    margin: 0px;
 }
 
-.rodape{
+
+#titulo {
     text-align: center;
+     
+}
+
+.rodape {
     position: fixed;
     bottom: 0;
     width: 100%;
     padding-top: 5px;
     padding-bottom: 5px;
-    
-}
-
-input{
-    display: block;
-    margin: 1px;
-}
-
-.user-input{
+    padding-left: 5px;
+    padding-right: 5px;
     text-align: center;
-    width: 50%;
-    margin-left: auto;
+    background-color: #ccc;
+}
+
+.entradas-usuario {
+    border: 1px solid;
+    width: 300px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
     margin-right: auto;
+    margin-left: auto;
     position: absolute;
-    left: 50%;
     top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    padding: 5px;
-    
-    
-    
-
 }
 
-
-#Ok-button {
-    align-items: center;
-    
-    
-    
-}
-
-*{                            /* O asteristico serve para aplicar a todos os elementos da página */  
-    margin: 0%; 
+input, button {
+    display: block;
+    padding: 2px;
+    margin: 5px;
 }
