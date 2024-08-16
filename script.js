@@ -23,3 +23,8 @@ function mascaraCpf(input) {
     cpf = cpf.replace(/(\d{3})(\d{1,2})$/,"$1-$2")
     input.value = cpf;
 }
+
+function toggleNightTime() {
+    document.body.classList.toggle('night-time');
+    document.querySelector('.entradas-usuario').classList.toggle('night-time');
+}
