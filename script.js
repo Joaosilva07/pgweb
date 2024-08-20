@@ -40,9 +40,11 @@ function checkCPF(cpf){
         soma += Number(cpf[i]) * j;
     }
      
-    let resto = (soma*10) % 11;
-    if (resto === 10) {
+    let resto = soma % 11;
+    if (resto < 2) {
         resto = 0;
+    } else {
+        resto = 11 - resto;
     }
 
     // verificaçao do segundo digito
@@ -52,9 +54,11 @@ function checkCPF(cpf){
         soma2 += Number(cpf[i]) * j;
     }
 
-    let resto2 = (soma2 * 10) % 11;
-    if (resto2 === 10) {
+    let resto2 = soma2 % 11;
+    if (resto2 < 2) {
         resto2 = 0;
+    } else {
+        resto2 = 11 - resto2;
     }
 
     if (resto2 !== Number(cpf[10])) {
