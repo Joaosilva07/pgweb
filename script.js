@@ -5,7 +5,7 @@ function submeter() {
     console.log(idade);
     let cpfInput = document.getElementById('cpf');
     let cpf = cpfInput.value;
-    cpf = cpf.replace(/\D/g, ''); // Remove non-digits
+    cpf = cpf.replace(/\D/g, '');
     console.log(checkCPF(cpf));
 }
 
