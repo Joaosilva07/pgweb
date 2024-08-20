@@ -10,6 +10,7 @@ function submeter() {
 }
 
 function mascaraCpf(input) {
+    // mascara de formatação de CPF
     let cpf = input.value;
     cpf = cpf.replace(/\D/g, ''); // Remove non-digits
     cpf = cpf.replace(/(\d{3})(\d)/,"$1.$2")
@@ -19,6 +20,7 @@ function mascaraCpf(input) {
 }
 
 function toggleNightTime() {
+    // botão dia/noite para mudar o tema
     document.body.classList.toggle('night-time');
     document.querySelector('.entradas-usuario').classList.toggle('night-time');
 }
@@ -26,6 +28,8 @@ function toggleNightTime() {
 
 function checkCPF(cpf){
     let soma = 0;
+
+    //verificaçao do primeiro digito
 
     const todosIguais = Array.from(cpf).every(digito => digito === cpf[0]);
     if (todosIguais) {
@@ -40,6 +44,8 @@ function checkCPF(cpf){
     if (resto === 10) {
         resto = 0;
     }
+
+    // verificaçao do segundo digito
 
     let soma2 = 0;
     for (let i = 0, j = 11; i < 10; i++, j--) {
