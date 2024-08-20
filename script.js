@@ -33,6 +33,7 @@ function checkCPF(cpf){
 
     const todosIguais = Array.from(cpf).every(digito => digito === cpf[0]);
     if (todosIguais) {
+        alert('CPF inválido');
         return false; 
     }
 
@@ -62,6 +63,7 @@ function checkCPF(cpf){
     }
 
     if (resto2 !== Number(cpf[10])) {
+        alert('CPF inválido');
         return false;
     }
 
